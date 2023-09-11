@@ -1,0 +1,75 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body{
+    background-image: linear-gradient(to bottom, rgb(202, 242, 255), rgb(143, 204, 224), rgb(12, 12, 92));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    margin: auto;
+}
+
+div img{
+    width: 100px;
+}
+
+.jogador01 > img{
+    transform: rotate(180deg);
+}
+
+p{
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    text-shadow: 1px 2px 2px black;
+}
+
+h1, h2, h3{
+    text-align: center;
+}
+
+h3{
+    color: rgba(255, 0, 0, 0.774);
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+
+.btn{
+    width: 200px;
+    margin: auto;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+a{
+    padding: 10px;
+    background-color: black;
+    border-radius: 3px;
+    box-shadow: 1px 2px 2px gray;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+a:hover{
+    background-color: rgba(255, 255, 255, 0.692);
+    color: black;
+}
+
+a:active{
+    transform: scale(90%);
+}
