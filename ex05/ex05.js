@@ -10,10 +10,10 @@ while(idade > 12 && idade < 60){
 quant = prompt("Informe a quantidade de participantes da excursão ");
 
 participante = [];
-for (i = 1; i <= quant; i++) {
-    participante[i] = prompt("Digite o nome do " + i + "° participante");
+for (i = 0; i < quant; i++) {
+    participante.push(prompt("Digite o nome do " + (i + 1) + "° participante"));
 }
 
-indice = Math.round(Math.random() * (participante.length - 1)) + 1;
+indice = Math.round(Math.random() * (participante.length - 1));
 document.write(`<h3> Parabéns ${participante[indice].toUpperCase()} você ganhou um almoço!</h3>`);
 
